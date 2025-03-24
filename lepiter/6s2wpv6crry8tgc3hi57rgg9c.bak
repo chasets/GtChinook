@@ -1,0 +1,286 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:32:14.866-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:32:41.341-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UHrTuHvtDQCeKcsyDNGFcg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "See {{gtPage:How to set up a home section|db=2j9m7db2i4oz116bexd7wbdxo}}"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:32:52.351-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:39:42.023-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SGwPu3vtDQCeMmCGDNGFcg=="
+				},
+				"code" : "\"GtHomeMultiCardSection\"\rGtChinookHomeSection\r\"copy methods from GtHomeMultiCardGetStartedSection\"\r\"defaultPriority, sectionTitle, gtUseKnowledgeBaseCard\""
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:33:06.376-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:33:07.341-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "WHHlu3vtDQCeTvXXDNGFcg=="
+				},
+				"code" : "dbName := thisSnippet database databaseName"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:33:09.574-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:42:41.771-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "iD0WvHvtDQCeWMxrDNGFcg=="
+				},
+				"code" : "dbName := 'chasets\\GtChinook\\lepiter'.\r\rGtHomeCard lepiterBaseWithTableOfContents\r\t\ttitle: 'Chinook Home Card';\r\t\tdescription: 'Explore Chinook knowledge base';\r\t\tpriority: 1;\r\t\tdatabaseName: dbName;\r\t\trecentlyEditedPage;\r\t\teditableToolbar;\r\t\tdetails: [ :db | \r\t\t\t| snippets somePages |\r\t\t\tsomePages := db pages select: #shouldAppearInIndexOrDailyNotes.\r\t\t\tsnippets := somePages flatCollect: #allChildrenDepthFirst.\r\t\t\t'Your local knowledge base includes '\r\t\t\t\t, somePages size asString , ' pages containing '\r\t\t\t\t, snippets size asString , ' snippets of '\r\t\t\t\t, (snippets groupedBy: #class) size asString , ' different kinds.' ]\r\t\t\t\tyourself"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:33:35.853-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:48:36.41-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EDKnvXvtDQCeZy+xDNGFcg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Use this to create {{gtMethod:}} **Don't forget to return GtHomeCard**"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:34:01.216-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:45:37.279-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QBbUvXvtDQCecClaDNGFcg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "add {{gtMethod:name=GtHome>>chinookSection}} which is just a copy of {{gtMethod:name=GtHome>>getStartedSection}}"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:33:30.927-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-03-24T13:34:08.343-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "sA9cvXvtDQCeY5RuDNGFcg=="
+				},
+				"code" : "GtWorld requestAllInstancesHomeUpdate"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-03-24T13:32:14.835-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-03-24T13:32:14.835-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Set up a home card"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "50fdd2b8-7bed-0d00-9e28-31780cd18572"
+	}
+}
