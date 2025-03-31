@@ -1,10 +1,10 @@
 Class {
-	#name : #ChinookAlbum,
+	#name : #ChinookArtist,
 	#superclass : #ChinookEntity,
 	#category : #'GtChinook-Core'
 }
 
 { #category : #'as yet unclassified' }
-ChinookAlbum >> name [
-	^ self rawData at: 'Title'
+ChinookArtist >> name [
+	^ self rawData at: 'Name'
 ]
