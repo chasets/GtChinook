@@ -7,6 +7,13 @@ Class {
 	#category : #'GtChinook-Core'
 }
 
+{ #category : #'as yet unclassified' }
+ChinookObject >> populate [
+	| data |
+	data := self accessObject retrieve.
+	self rawData: data
+]
+
 { #category : #accessing }
 ChinookObject >> rawData [
 	^ rawData ifNil: [ Dictionary new ]

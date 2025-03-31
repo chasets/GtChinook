@@ -240,14 +240,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T10:21:08.197841-04:00"
+						"dateAndTimeString" : "2025-03-31T10:28:08.17602-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "hWJb1AXuDQCgaVQaBhgB/w=="
 				},
-				"code" : "\"subclass ChinookGroup\"\rAlbums new rawData: albums"
+				"code" : "\"subclass ChinookGroup\"\rChinookAlbums new rawData: albums"
 			},
 			{
 				"__type" : "textSnippet",
