@@ -6,5 +6,5 @@ Class {
 
 { #category : #'as yet unclassified' }
 ChinookAccessAlbums >> retrieve [
-	self retrieveFor: 'Album'
+	^ self retrieveFor: 'Album'
 ]
