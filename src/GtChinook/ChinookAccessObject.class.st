@@ -16,8 +16,13 @@ ChinookAccessObject class >> new [
 ]
 
 { #category : #'as yet unclassified' }
+ChinookAccessObject class >> reset [
+	uniqueInstance := nil
+]
+
+{ #category : #'as yet unclassified' }
 ChinookAccessObject class >> uniqueInstance [
-	^ uniqueInstance ifNil: [ uniqueInstance := self new resetData]
+	^ uniqueInstance ifNil: [ uniqueInstance := self basicNew resetData]
 ]
 
 { #category : #accessing }
