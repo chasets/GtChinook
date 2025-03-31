@@ -168,7 +168,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-24T13:48:36.41-04:00"
+						"dateAndTimeString" : "2025-03-24T13:48:54.593-04:00"
 					}
 				},
 				"uid" : {
@@ -178,7 +178,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Use this to create {{gtMethod:}} **Don't forget to return GtHomeCard**"
+				"string" : " **Don't forget to return GtHomeCard**"
 			},
 			{
 				"__type" : "textSnippet",
