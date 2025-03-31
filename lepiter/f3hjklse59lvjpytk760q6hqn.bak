@@ -425,7 +425,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-31T11:17:09.199215-04:00"
+									"dateAndTimeString" : "2025-03-31T13:42:56.230905-04:00"
 								}
 							},
 							"uid" : {
@@ -554,6 +554,74 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-31T13:56:17.205097-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-31T14:11:51.061303-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "sm+v3wjuDQCkSjVtBRMPUw=="
+							},
+							"code" : "ChinookDataJson new rawData"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-31T14:00:24.410449-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-31T14:00:42.743675-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "/X5r7gjuDQClCn87BRMPUw=="
+							},
+							"code" : "ChinookDataJson new"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2025-03-31T12:51:38.43466-04:00"
 								}
 							},
@@ -565,14 +633,48 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-31T12:52:11.641227-04:00"
+									"dateAndTimeString" : "2025-03-31T13:25:36.446677-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "XBl++AfuDQCqDYptCTIGYg=="
 							},
-							"code" : "ChinookAccessObject uniqueInstance "
+							"code" : "ChinookAccessObject downloadedData "
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-31T13:16:28.562591-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-31T13:36:06.53829-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "MKVPUQjuDQCzT6KDBvTccg=="
+							},
+							"code" : "ChinookAccessObject resetData"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -599,14 +701,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-31T13:06:45.668346-04:00"
+									"dateAndTimeString" : "2025-03-31T13:50:00.591447-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "emZdKgjuDQCyRQyrBvTccg=="
 							},
-							"code" : "ChinookAccessObject uniqueInstance resetData"
+							"code" : "ChinookAccessObject new getData"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -633,14 +735,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-31T13:07:07.117939-04:00"
+									"dateAndTimeString" : "2025-03-31T13:37:21.949051-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "Km9cKQjuDQCyBEB6BvTccg=="
 							},
-							"code" : "ChinookAccessObject new resetData\t"
+							"code" : "ChinookAccessObject new "
 						}
 					]
 				},
@@ -663,7 +765,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T12:51:29.228159-04:00"
+						"dateAndTimeString" : "2025-03-31T13:56:13.776174-04:00"
 					}
 				},
 				"uid" : {
@@ -673,7 +775,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "After adding singleton"
+				"string" : "After adding a data object"
 			}
 		]
 	},
