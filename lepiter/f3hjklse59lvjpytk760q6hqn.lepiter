@@ -467,6 +467,40 @@
 								"uidString" : "6pJbqAbuDQCAmyjeDvGF4Q=="
 							},
 							"code" : "ChinookAlbums new accessObject"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-31T12:14:34.006183-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-03-31T12:14:54.127915-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ZwLocwfuDQCY77l0BJo7gw=="
+							},
+							"code" : "ChinookAlbums new populate"
 						}
 					]
 				},

@@ -37,5 +37,5 @@ ChinookAccessObject >> retrieve [
 
 { #category : #accessing }
 ChinookAccessObject >> retrieveFor: aKey [
-	self rawData at: aKey 
+	^ self rawData at: aKey 
 ]

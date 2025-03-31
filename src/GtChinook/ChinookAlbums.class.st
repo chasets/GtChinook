@@ -6,7 +6,7 @@ Class {
 
 { #category : #accessing }
 ChinookAlbums >> accessObject [
-	^ ChinookAccessAlbums
+	^ ChinookAccessAlbums new
 ]
 
 { #category : #'as yet unclassified' }
