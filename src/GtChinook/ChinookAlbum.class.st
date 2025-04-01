@@ -1,16 +1,21 @@
 Class {
 	#name : #ChinookAlbum,
 	#superclass : #ChinookEntity,
+	#instVars : [
+		'albumCover'
+	],
 	#category : #'GtChinook-Core'
 }
 
 { #category : #util }
 ChinookAlbum >> albumCover [
 	| releaseId imageUrl image |
+	albumCover ifNil: [
 	releaseId := [self albumReleaseId] onErrorDo: [^ self placeholderImage].
 	imageUrl := [self albumCoverImageUrlFor: releaseId] onErrorDo: [^ self placeholderImage].
 	image := [ZnEasy getJpeg: imageUrl] onErrorDo: [^ self placeholderImage].
-	^ image
+	albumCover := image].
+	^ albumCover
 	
 ]
 
