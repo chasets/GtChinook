@@ -10,6 +10,7 @@ Class {
 
 { #category : #accessing }
 ChinookSqliteAccessObject >> databaseConfig [
+	databaseConfig ifNil: [self error: 'databaseConfig is required to be set'].
 	^ databaseConfig
 ]
 

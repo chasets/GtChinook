@@ -3,7 +3,8 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'rawData',
-		'config'
+		'config',
+		'accessObject'
 	],
 	#category : #'GtChinook-Core'
 }
@@ -11,9 +12,15 @@ Class {
 { #category : #'as yet unclassified' }
 ChinookObject >> accessObject [
 	"find the subclass of the accessClassname that matches the group class (e.g., AwsEc2Instances) of the current class"
-	| accessClass |
-	accessClass := self config accessClassname asClass allSubclasses detect: [:item | item groupClassname = self className].
-	^ accessClass new 
+
+	| accessClass databaseConfig |
+	accessObject
+		ifNil: [ accessClass := self config accessClassname asClass allSubclasses
+					detect: [ :item | item groupClassname = self className ].
+			databaseConfig := [ self config databaseConfig ]
+					onErrorDo: [ ^ accessClass new ].
+			accessObject := accessClass new databaseConfig: databaseConfig ].
+	^ accessObject
 ]
 
 { #category : #accessing }
@@ -34,7 +41,7 @@ ChinookObject >> gtAccessObjectFor: aView [
 		title: 'Access Object';
 		priority: 20;
 		object: [ self accessObject ];
-		view: #gtMetaFor:
+		view: #gtRawFor:
 ]
 
 { #category : #'as yet unclassified' }
