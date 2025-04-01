@@ -4,11 +4,6 @@ Class {
 	#category : #'GtChinook-Core'
 }
 
-{ #category : #accessing }
-ChinookAlbums >> accessObject [
-	^ ChinookAccessAlbums new
-]
-
 { #category : #'as yet unclassified' }
 ChinookAlbums >> forArtist: anArtistId [
 	^ self items select: [:i | i artistId = anArtistId]

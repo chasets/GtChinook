@@ -5,7 +5,7 @@ Class {
 		'rawData',
 		'rootDirectory'
 	],
-	#category : #'GtChinook-Accesss'
+	#category : #'GtChinook-Access'
 }
 
 { #category : #accessing }

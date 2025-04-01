@@ -5,6 +5,11 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
+ChinookAccessAlbums class >> groupClassname [
+	^ 'ChinookAlbums'
+]
+
+{ #category : #'as yet unclassified' }
 ChinookAccessAlbums >> retrieve [
 	^ self retrieveFor: 'Album'
 ]

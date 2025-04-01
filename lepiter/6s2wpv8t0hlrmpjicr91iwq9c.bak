@@ -177,7 +177,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-01T09:31:49.789338-04:00"
+						"dateAndTimeString" : "2025-04-01T09:31:52.035198-04:00"
 					}
 				},
 				"uid" : {
@@ -187,7 +187,44 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Get some"
+				"string" : "[[Get some cover art]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T09:31:53.239146-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T12:21:29.725261-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "suf1SxnuDQCs0XwWD2WhjA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[Refactor accessObjects so that domain objects d"
 			},
 			{
 				"__type" : "textSnippet",
