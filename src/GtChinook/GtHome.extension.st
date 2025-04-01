@@ -8,12 +8,3 @@ GtHome >> chinookSection [
 	^ GtChinookHomeSection new
 
 ]
-
-{ #category : #'*GtChinook' }
-GtHome >> getStartedSection [
-	<gtHomeSection>
-	<gtExample>
-	<noTest>
-	^ GtHomeMultiCardGetStartedSection new
-
-]

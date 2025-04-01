@@ -15,7 +15,7 @@ GtChinookHomeSection >> gtUsedKnowledgeBaseCard [
 	<gtExample>
 	<noTest>
 	| dbName |
-	dbName := (LeDatabasesRegistry downloadedData defaultLogicalDatabase databases detect: [:i | i databaseName includesSubstring: 'GtChinook']) databaseName.
+	dbName := (LeDatabasesRegistry defaultLogicalDatabase databases detect: [:i | i databaseName includesSubstring: 'GtChinook']) databaseName.
 	^ GtHomeCard lepiterBaseWithTableOfContents
 		title: 'Chinook Home Card';
 		description: 'Explore Chinook knowledge base';
