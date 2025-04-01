@@ -8,10 +8,20 @@ Class {
 	#category : #'GtChinook-Access'
 }
 
+{ #category : #accessing }
+ChinookSqliteAccessObject >> databaseConfig [
+	^ databaseConfig
+]
+
+{ #category : #accessing }
+ChinookSqliteAccessObject >> databaseConfig: anObject [
+	databaseConfig := anObject
+]
+
 { #category : #'as yet unclassified' }
 ChinookSqliteAccessObject >> exec: aCommand [
 	| connection cursor |
-	connection := SQLite3Connection on: ChinookDataRepo new sqliteFile.
+	connection := SQLite3Connection on: self databaseConfig sqlitePath.
 	connection open.
 	cursor := connection execute: aCommand.
 	results := cursor rows

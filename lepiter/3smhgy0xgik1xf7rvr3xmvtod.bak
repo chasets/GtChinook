@@ -137,14 +137,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-01T16:24:17.533811-04:00"
+						"dateAndTimeString" : "2025-04-01T16:23:47.088435-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "LRTdCB/uDQCapTm+BX0hPg=="
 				},
-				"code" : "dbConfig := ChinookSqliteDatabaseConfig new . \rChinookSqliteAccessObject new databaseConfig: dbConfig; query: 'select * from artist'"
+				"code" : "ChinookSqliteAccessObject new databaseConfig: _"
 			}
 		]
 	},
