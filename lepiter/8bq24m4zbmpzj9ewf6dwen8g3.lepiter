@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T08:58:10.811885-04:00"
+						"dateAndTimeString" : "2025-04-01T09:31:56.2972-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,20 +29,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T08:58:16.035962-04:00"
+						"dateAndTimeString" : "2025-04-01T09:32:25.334881-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "WL2StQTuDQCaRVz1BBzCUg=="
+					"uidString" : "BpQkTBnuDQCs2a2lD2WhjA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Exploration]]"
+				"string" : "See [MusicBrainz](https://musicbrainz.org/)"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T08:53:05.041078-04:00"
+						"dateAndTimeString" : "2025-04-01T09:32:02.01041-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,20 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T08:53:13.144632-04:00"
+						"dateAndTimeString" : "2025-04-01T10:09:43.155984-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "YAlZowTuDQCWBoZbBBzCUg=="
+					"uidString" : "1b57TBnuDQCs3BGSD2WhjA=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Planning]]"
+				"code" : "queryParams := {'query' -> 'Back to Black' . 'fmt' -> 'json' . 'limit' -> '1'} asDictionary.\r\rsearchUrl := 'http://musicbrainz.org/ws/2/release' asZnUrl query: queryParams"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -92,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T10:12:38.090665-04:00"
+						"dateAndTimeString" : "2025-04-01T09:32:36.866522-04:00"
 					}
 				},
 				"editEmail" : {
@@ -103,20 +100,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T10:12:38.109661-04:00"
+						"dateAndTimeString" : "2025-04-01T10:21:04.041069-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "AFSlvwXuDQCgEz88BhgB/w=="
+					"uidString" : "M5qPThnuDQCtd2FrD2WhjA=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Using the domain objects - Albums]]"
+				"code" : "searchResult := ZnClient new forJsonREST get: searchUrl"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -129,7 +123,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T10:33:47.468982-04:00"
+						"dateAndTimeString" : "2025-04-01T10:10:11.419232-04:00"
 					}
 				},
 				"editEmail" : {
@@ -140,20 +134,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T10:34:01.415894-04:00"
+						"dateAndTimeString" : "2025-04-01T10:11:10.782996-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "uyuBCwbuDQCkTLNgDo0IDQ=="
+					"uidString" : "s1rx1BnuDQC1CCdOD2WhjA=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Artist domain objects]]"
+				"code" : "releaseId := (searchResult at: 'releases') first at: 'id'"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -166,7 +157,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-01T09:31:47.747823-04:00"
+						"dateAndTimeString" : "2025-04-01T09:34:51.360422-04:00"
 					}
 				},
 				"editEmail" : {
@@ -177,20 +168,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-01T09:31:52.035198-04:00"
+						"dateAndTimeString" : "2025-04-01T10:12:23.684205-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "+XVxSxnuDQCsPNpAD2WhjA=="
+					"uidString" : "dNCTVhnuDQCuNf14D2WhjA=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Get some cover art]]"
+				"code" : "coverUrl := 'http://coverartarchive.org/release' asZnUrl addPathSegment: releaseId "
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -203,7 +191,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-01T09:31:53.239146-04:00"
+						"dateAndTimeString" : "2025-04-01T10:05:38.209203-04:00"
 					}
 				},
 				"editEmail" : {
@@ -214,20 +202,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-01T09:31:53.239146-04:00"
+						"dateAndTimeString" : "2025-04-01T10:12:53.713212-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "suf1SxnuDQCs0XwWD2WhjA=="
+					"uidString" : "CH6oxBnuDQCx2bCCD2WhjA=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "coverResult := ZnClient new forJsonREST get: coverUrl"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -240,7 +225,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T10:34:02.717147-04:00"
+						"dateAndTimeString" : "2025-04-01T10:12:54.280996-04:00"
 					}
 				},
 				"editEmail" : {
@@ -251,61 +236,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-31T10:34:02.717147-04:00"
+						"dateAndTimeString" : "2025-04-01T10:14:02.897354-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "v9dpDAbuDQCk2OV0Do0IDQ=="
+					"uidString" : "62qm3hnuDQC3kgx8D2WhjA=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "imageUrl := (coverResult at: 'images') first at: 'thumbnails' at: 'small'"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-24T13:31:51.102-04:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-24T13:32:11.009-04:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "SNpot3vtDQCdsOdlDNGFcg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Set up a home card]]"
-						}
-					]
+					"items" : [ ]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -315,7 +259,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-24T13:31:05.185-04:00"
+						"dateAndTimeString" : "2025-04-01T10:14:18.369464-04:00"
 					}
 				},
 				"editEmail" : {
@@ -326,17 +270,82 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-03-24T13:31:50.034-04:00"
+						"dateAndTimeString" : "2025-04-01T10:20:20.945845-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "6DqstHvtDQCdQTmWDNGFcg=="
+					"uidString" : "pIGp4xnuDQC5StTiD2WhjA=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
+				"code" : "image := ZnEasy getJpeg: imageUrl"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
 				},
-				"string" : "[[Admin]]"
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T10:21:19.244753-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T10:39:48.812873-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "m4+//BnuDQC8KNq6D2WhjA=="
+				},
+				"code" : "ChinookAlbums new populate items at: 1"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T10:40:34.215994-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T10:42:17.233662-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "YQWXQRruDQC9jQU5D2WhjA=="
+				},
+				"code" : "GtABCartoonAddressBookExample new cartoonAddressBook"
 			}
 		]
 	},
@@ -348,7 +357,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-03-24T13:31:05.142-04:00"
+			"dateAndTimeString" : "2025-04-01T09:31:56.269872-04:00"
 		}
 	},
 	"editEmail" : {
@@ -359,15 +368,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-03-24T13:31:27.841-04:00"
+			"dateAndTimeString" : "2025-04-01T09:31:56.269872-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Chinook ToC"
+		"title" : "Get some cover art"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "f092abb4-7bed-0d00-9d40-e2c90cd18572"
+		"uuid" : "8328244c-19ee-0d00-acd8-bbd50f65a18c"
 	}
 }

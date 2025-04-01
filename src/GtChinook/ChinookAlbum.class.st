@@ -4,12 +4,89 @@ Class {
 	#category : #'GtChinook-Core'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #util }
+ChinookAlbum >> albumCover [
+	| releaseId imageUrl image |
+	releaseId := self albumReleaseId.
+	imageUrl := self albumCoverImageUrlFor: releaseId.
+	image := ZnEasy getJpeg: imageUrl.
+	^ image
+	
+]
+
+{ #category : #util }
+ChinookAlbum >> albumCoverImageUrlFor: aReleaseId [ 
+| coverUrl coverResult imageUrl |
+	coverUrl := 'http://coverartarchive.org/release' asZnUrl addPathSegment: aReleaseId.
+	 coverResult := ZnClient new forJsonREST get: coverUrl.
+	 imageUrl := (coverResult at: 'images') first at: 'thumbnails' at: 'small'.
+	 ^ imageUrl
+]
+
+{ #category : #util }
+ChinookAlbum >> albumReleaseId [
+	 | queryParams searchUrl searchResult releaseId |
+	queryParams := {'query' -> self name . 'fmt' -> 'json' . 'limit' -> '1'} asDictionary.
+	searchUrl := 'http://musicbrainz.org/ws/2/release' asZnUrl query: queryParams.
+	searchResult := ZnClient new forJsonREST get: searchUrl.
+	releaseId := (searchResult at: 'releases') first at: 'id'.
+	^ releaseId
+]
+
+{ #category : #info }
 ChinookAlbum >> artistId [
 	^ self rawData at: 'ArtistId'
 ]
 
 { #category : #'as yet unclassified' }
+ChinookAlbum >> gtViewDetailsFor: aView [
+	<gtView>
+	^ aView explicit 
+		title: 'Album Details' translated;
+		priority: 5;
+		stencil: [
+			|container verticalContainer detailsTextContainer avatarContainer nameTextContainer details|
+			details := self name.
+			
+			container := BlElement new
+				layout: BlLinearLayout horizontal;
+				background: Color white;
+				aptitude: BrShadowAptitude;
+				margin: (BlInsets all: 20);
+				constraintsDo: [ :c | 
+					c horizontal fitContent.
+					c vertical fitContent].
+			avatarContainer := BlElement new
+				size: 124@124;
+				background: (self albumCover scaledToSize: 124@124);
+				margin: (BlInsets all: 10).
+			nameTextContainer := BlTextElement new
+				constraintsDo: [ :c | 
+					c horizontal matchParent ];
+				margin: (BlInsets top: 5 right: 0 bottom: 20 left: 5);
+				text: (self name asRopedText glamorousRegularFont
+					fontSize: 30;
+					foreground: Color black).
+			detailsTextContainer := BrEditor new
+				aptitude: (BrGlamorousRegularEditorAptitude new fontSize: 16);
+				text: details;
+				constraintsDo: [ :c | 
+					c horizontal matchParent.
+					c vertical matchParent ].
+			verticalContainer := BlElement new
+				layout: BlLinearLayout vertical;
+				margin: (BlInsets all: 10);
+				constraintsDo: [ :c | 
+					c horizontal matchParent.
+					c vertical matchParent].
+			verticalContainer addChild: nameTextContainer.
+			verticalContainer addChild: detailsTextContainer.
+			container addChild: avatarContainer.
+			container addChild: verticalContainer.
+			container ].
+]
+
+{ #category : #info }
 ChinookAlbum >> name [
 	^ self rawData at: 'Title'
 ]
