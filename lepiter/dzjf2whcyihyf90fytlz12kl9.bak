@@ -100,14 +100,116 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-01T13:36:42.571822-04:00"
+						"dateAndTimeString" : "2025-04-01T13:37:20.466187-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "FxkHthzuDQC85Rt5A75C7A=="
 				},
-				"code" : "connection := SQLite3Connection\n  on: ChinookDataRepo new sqliteFile."
+				"code" : "connection := SQLite3Connection\n  on: (ChinookDataRepo new sqliteFile)."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T15:27:15.604527-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T15:27:16.18489-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "p1/fQh7uDQCitvMJAHmP1A=="
+				},
+				"code" : "connection open."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T15:27:23.143126-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T15:31:51.222922-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "4GhSQx7uDQCiwKJnAHmP1A=="
+				},
+				"code" : "sql := 'select * from sqlite_schema'.\r(connection execute: sql) rows collect: #asDictionary"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T15:32:14.71887-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T15:32:16.333143-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "b4CzVB7uDQClH3otAHmP1A=="
+				},
+				"code" : "sql := 'select * from sqlite_schema'.\r(connection execute: sql) rows collect: #asDictionary"
 			}
 		]
 	},
