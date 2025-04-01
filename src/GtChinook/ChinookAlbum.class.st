@@ -7,9 +7,9 @@ Class {
 { #category : #util }
 ChinookAlbum >> albumCover [
 	| releaseId imageUrl image |
-	releaseId := self albumReleaseId.
-	imageUrl := self albumCoverImageUrlFor: releaseId.
-	image := ZnEasy getJpeg: imageUrl.
+	releaseId := [self albumReleaseId] onErrorDo: [^ self placeholderImage].
+	imageUrl := [self albumCoverImageUrlFor: releaseId] onErrorDo: [^ self placeholderImage].
+	image := [ZnEasy getJpeg: imageUrl] onErrorDo: [^ self placeholderImage].
 	^ image
 	
 ]
@@ -39,6 +39,11 @@ ChinookAlbum >> artistId [
 ]
 
 { #category : #'as yet unclassified' }
+ChinookAlbum >> artistName [
+	^ (ChinookArtists new populate items detect: [:i | i artistId = self artistId]) name
+]
+
+{ #category : #'as yet unclassified' }
 ChinookAlbum >> gtViewDetailsFor: aView [
 	<gtView>
 	^ aView explicit 
@@ -46,7 +51,7 @@ ChinookAlbum >> gtViewDetailsFor: aView [
 		priority: 5;
 		stencil: [
 			|container verticalContainer detailsTextContainer avatarContainer nameTextContainer details|
-			details := self name.
+			details := self artistName.
 			
 			container := BlElement new
 				layout: BlLinearLayout horizontal;
@@ -89,4 +94,14 @@ ChinookAlbum >> gtViewDetailsFor: aView [
 { #category : #info }
 ChinookAlbum >> name [
 	^ self rawData at: 'Title'
+]
+
+{ #category : #'as yet unclassified' }
+ChinookAlbum >> placeholderImage [
+| borderedForm |
+	borderedForm := Form extent: 100@100.
+	^ borderedForm 
+	    fillColor: Color lightGray;
+	    borderWidth: 1 
+	    color: Color black
 ]
