@@ -1,0 +1,144 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T13:31:33.560963-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T13:34:54.242717-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "rDYYpRzuDQCz5v6SA75C7A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "In my [GtDbUsql](https://github.com/chasets/GtDbUsql) repo, I use the [usql](https://github.com/xo/usql) cli program to access sqlite and a bunch of other databases. This is for flexibility, rather than any deficiency in the sqlite (or postgres for that matter) Pharo drivers. I access a bunch of non-standard databases (Redshift, Databricks, Snowflake, duckdb, etc.) that don't necessarily have Pharo drivers. But for this example, we can just load the normal Pharo sqlite driver. "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T13:35:17.891011-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T13:35:18.962913-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "VjR3shzuDQC82yHyA75C7A=="
+				},
+				"code" : "Metacello new\n  repository: 'github://pharo-rdbms/Pharo-SQLite3/src';\n  baseline: 'SQLite3';\n  load"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T13:36:17.65287-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-01T13:37:20.466187-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "FxkHthzuDQC85Rt5A75C7A=="
+				},
+				"code" : "connection := SQLite3Connection\n  on: (ChinookDataRepo new sqliteFile)."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-04-01T13:31:33.511027-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-04-01T13:31:33.511027-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "add the sqlite drivers to our GT image"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "bd7117a5-1cee-0d00-b3e5-9b2a03be42ec"
+	}
+}

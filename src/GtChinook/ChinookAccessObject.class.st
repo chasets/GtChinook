@@ -9,7 +9,7 @@ Class {
 
 { #category : #accessing }
 ChinookAccessObject >> rawData [
-	rawData ifNil: [rawData := ChinookDataJson new rawData].
+	rawData ifNil: [rawData := ChinookDataRepo new rawData].
 	^ rawData
 ]
 

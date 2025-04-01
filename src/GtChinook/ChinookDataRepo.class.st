@@ -1,5 +1,5 @@
 Class {
-	#name : #ChinookDataJson,
+	#name : #ChinookDataRepo,
 	#superclass : #Object,
 	#instVars : [
 		'rawData',
@@ -9,14 +9,14 @@ Class {
 }
 
 { #category : #accessing }
-ChinookDataJson >> exists [
+ChinookDataRepo >> exists [
 	| rootDirectory |
 	rootDirectory := 'chinook-data' asFileReference.
 	^ rootDirectory exists
 ]
 
 { #category : #accessing }
-ChinookDataJson >> rawData [
+ChinookDataRepo >> rawData [
 	| jsonFile |
 	rawData
 		ifNil: [ self exists ifFalse: [ self resetData ].
@@ -27,12 +27,12 @@ ChinookDataJson >> rawData [
 ]
 
 { #category : #accessing }
-ChinookDataJson >> rawData: anObject [
+ChinookDataRepo >> rawData: anObject [
 	rawData := anObject
 ]
 
 { #category : #'as yet unclassified' }
-ChinookDataJson >> resetData [
+ChinookDataRepo >> resetData [
 	| repository |
 	self rootDirectory ensureDeleteAll.
 	repository := IceRepositoryCreator
@@ -42,12 +42,17 @@ ChinookDataJson >> resetData [
 ]
 
 { #category : #accessing }
-ChinookDataJson >> rootDirectory [
+ChinookDataRepo >> rootDirectory [
 	rootDirectory ifNil: [rootDirectory := 'chinook-data' asFileReference].
 	^ rootDirectory
 ]
 
 { #category : #accessing }
-ChinookDataJson >> rootDirectory: anObject [
+ChinookDataRepo >> rootDirectory: anObject [
 	rootDirectory := anObject
+]
+
+{ #category : #'as yet unclassified' }
+ChinookDataRepo >> sqliteFile [
+	^ (self rootDirectory / 'ChinookDatabase' / 'DataSources' / 'Chinook_sqlite.sqlite') pathString
 ]
