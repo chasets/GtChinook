@@ -220,7 +220,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-31T09:55:09.421863-04:00"
+									"dateAndTimeString" : "2025-03-31T09:57:08.317184-04:00"
 								}
 							},
 							"uid" : {
@@ -230,7 +230,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Entity and Group subclass Object. Group uses TGtGroup traits"
+							"string" : "Entity and Group subclass Object. Group uses TGtGroup traits. Copy relevant methods."
 						},
 						{
 							"__type" : "pharoSnippet",

@@ -174,14 +174,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-04-01T16:44:57.348151-04:00"
+						"dateAndTimeString" : "2025-04-07T12:02:45.103278-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "qjopVB/uDQCfbzbhD/BiyQ=="
 				},
-				"code" : "ChinookSqliteConfig new databaseConfig"
+				"code" : "dbConfig := ChinookSqliteDatabaseConfig new . \rChinookSqliteConfig new databaseConfig: dbConfig"
 			},
 			{
 				"__type" : "textSnippet",
