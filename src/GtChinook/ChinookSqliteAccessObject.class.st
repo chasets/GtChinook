@@ -3,7 +3,8 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'databaseConfig',
-		'results'
+		'results',
+		'structuredResults'
 	],
 	#category : #'GtChinook-Access'
 }
@@ -37,8 +38,12 @@ ChinookSqliteAccessObject >> query: sqlString [
 
 { #category : #'as yet unclassified' }
 ChinookSqliteAccessObject >> queryWithStructuredResults: sqlString [
-	| structuredResults |
 	self exec: sqlString.
 	structuredResults := results collect: #asDictionary.
+	^ structuredResults
+]
+
+{ #category : #accessing }
+ChinookSqliteAccessObject >> structuredResults [
 	^ structuredResults
 ]
