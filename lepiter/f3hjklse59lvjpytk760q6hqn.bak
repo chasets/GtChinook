@@ -391,14 +391,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-31T11:15:59.740427-04:00"
+									"dateAndTimeString" : "2025-04-08T15:14:04.175907-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "eCrlcQbuDQC7+WnlDvGF4Q=="
 							},
-							"code" : "ChinookAccessObject new retrieveFor: 'Album'"
+							"code" : "ChinookAccessObject new retrieveForTable: 'Album'"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -565,14 +565,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-31T14:11:51.061303-04:00"
+									"dateAndTimeString" : "2025-04-01T13:27:35.076876-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "sm+v3wjuDQCkSjVtBRMPUw=="
 							},
-							"code" : "ChinookDataJson new rawData"
+							"code" : "ChinookDataRepo new rawData"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -599,14 +599,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-03-31T14:00:42.743675-04:00"
+									"dateAndTimeString" : "2025-04-01T13:27:35.093933-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "/X5r7gjuDQClCn87BRMPUw=="
 							},
-							"code" : "ChinookDataJson new"
+							"code" : "ChinookDataRepo new"
 						},
 						{
 							"__type" : "pharoSnippet",
