@@ -17,10 +17,15 @@ ChinookObject >> accessObject [
 	accessObject
 		ifNil: [ accessClass := self config accessClassname asClass allSubclasses
 					detect: [ :item | item groupClassname = self className ].
-			databaseConfig := [ self config databaseConfig ]
-					onErrorDo: [ ^ accessClass new ].
+			"if we are in a non-database situation, just return a new object without a databaseConfig"
+			databaseConfig := [ self config databaseConfig ] onErrorDo: [ ^ accessClass new ].
 			accessObject := accessClass new databaseConfig: databaseConfig ].
 	^ accessObject
+]
+
+{ #category : #accessing }
+ChinookObject >> accessObject: anObject [
+	accessObject := anObject
 ]
 
 { #category : #accessing }

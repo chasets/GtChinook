@@ -11,5 +11,5 @@ ChinookAlbums >> forArtist: anArtistId [
 
 { #category : #'as yet unclassified' }
 ChinookAlbums >> items [
-	^ (rawData collect: [ :each | ChinookAlbum new rawData: each ]) sorted
+	^ (rawData collect: [ :each | ChinookAlbum new config: self config; rawData: each ]) sorted
 ]

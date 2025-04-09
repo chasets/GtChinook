@@ -6,7 +6,7 @@ Class {
 
 { #category : #'as yet unclassified' }
 ChinookArtist >> albums [
-	^ ChinookAlbums new populate; forArtist: self artistId
+	^ ChinookAlbums new config: self config; populate; forArtist: self artistId
 ]
 
 { #category : #'as yet unclassified' }
