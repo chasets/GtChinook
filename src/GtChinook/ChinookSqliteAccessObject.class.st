@@ -30,11 +30,6 @@ ChinookSqliteAccessObject >> exec: aCommand [
 ]
 
 { #category : #'as yet unclassified' }
-ChinookSqliteAccessObject >> informationSchemaSqlClassname [
-	^ 'InformationSchemaSqliteSql'
-]
-
-{ #category : #'as yet unclassified' }
 ChinookSqliteAccessObject >> query: sqlString [
 	| structuredResults|.
 	structuredResults := self queryWithStructuredResults: sqlString.
