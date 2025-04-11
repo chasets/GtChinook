@@ -38,6 +38,14 @@ ChinookAlbum >> albumReleaseId [
 	^ releaseId
 ]
 
+{ #category : #'as yet unclassified' }
+ChinookAlbum >> artist [
+	"super inefficient way to do this; just an example for navigation"
+	| allArtists |
+	allArtists := ChinookArtists new config: self config; populate.
+	^ allArtists detect: [:i | i artistId = self artistId]
+]
+
 { #category : #info }
 ChinookAlbum >> artistId [
 	^ self rawData at: 'ArtistId'
@@ -45,7 +53,17 @@ ChinookAlbum >> artistId [
 
 { #category : #'as yet unclassified' }
 ChinookAlbum >> artistName [
-	^ (ChinookArtists new populate items detect: [:i | i artistId = self artistId]) name
+	^ self artist name
+]
+
+{ #category : #'as yet unclassified' }
+ChinookAlbum >> gtArtistFor: aView [
+	<gtView>
+	^ aView forward
+		title: 'Artist';
+		priority: 15;
+		object: [ {self artist}  ];
+		view: #gtItemsFor:
 ]
 
 { #category : #'as yet unclassified' }
