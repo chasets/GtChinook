@@ -1,20 +1,22 @@
 Class {
-	#name : #ChinookArtist,
-	#superclass : #ChinookEntity,
-	#category : #'GtChinook-Core'
+	#name : 'ChinookArtist',
+	#superclass : 'ChinookEntity',
+	#category : 'GtChinook-Core',
+	#package : 'GtChinook',
+	#tag : 'Core'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookArtist >> albums [
 	^ ChinookAlbums new config: self config; populate; forArtist: self artistId
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookArtist >> artistId [
 	^ self rawData at: 'ArtistId'
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookArtist >> gtAlbumsFor: aView [
 	<gtView>
 	^ aView forward
@@ -24,7 +26,7 @@ ChinookArtist >> gtAlbumsFor: aView [
 		view: #gtItemsFor:
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookArtist >> name [
 	^ self rawData at: 'Name'
 ]

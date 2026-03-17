@@ -1,26 +1,28 @@
 Class {
-	#name : #ChinookSqliteAccessObject,
-	#superclass : #Object,
+	#name : 'ChinookSqliteAccessObject',
+	#superclass : 'Object',
 	#instVars : [
 		'databaseConfig',
 		'results',
 		'structuredResults'
 	],
-	#category : #'GtChinook-Access'
+	#category : 'GtChinook-Access',
+	#package : 'GtChinook',
+	#tag : 'Access'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookSqliteAccessObject >> databaseConfig [
 	databaseConfig ifNil: [self error: 'databaseConfig is required to be set'].
 	^ databaseConfig
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookSqliteAccessObject >> databaseConfig: anObject [
 	databaseConfig := anObject
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookSqliteAccessObject >> exec: aCommand [
 	| connection cursor |
 	connection := SQLite3Connection on: self databaseConfig sqlitePath.
@@ -29,21 +31,21 @@ ChinookSqliteAccessObject >> exec: aCommand [
 	results := cursor rows
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookSqliteAccessObject >> query: sqlString [
 	| structuredResults|.
 	structuredResults := self queryWithStructuredResults: sqlString.
 	^ structuredResults
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookSqliteAccessObject >> queryWithStructuredResults: sqlString [
 	self exec: sqlString.
 	structuredResults := results collect: #asDictionary.
 	^ structuredResults
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookSqliteAccessObject >> structuredResults [
 	^ structuredResults
 ]

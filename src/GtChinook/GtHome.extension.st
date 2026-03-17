@@ -1,6 +1,6 @@
-Extension { #name : #GtHome }
+Extension { #name : 'GtHome' }
 
-{ #category : #'*GtChinook' }
+{ #category : '*GtChinook' }
 GtHome >> chinookSection [
 	<gtHomeSection>
 	<gtExample>

@@ -1,21 +1,23 @@
 Class {
-	#name : #ChinookDataRepo,
-	#superclass : #Object,
+	#name : 'ChinookDataRepo',
+	#superclass : 'Object',
 	#instVars : [
 		'rawData',
 		'rootDirectory'
 	],
-	#category : #'GtChinook-Access'
+	#category : 'GtChinook-Access',
+	#package : 'GtChinook',
+	#tag : 'Access'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookDataRepo >> exists [
 	| rootDirectory |
 	rootDirectory := 'chinook-data' asFileReference.
 	^ rootDirectory exists
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookDataRepo >> rawData [
 	| jsonFile |
 	rawData
@@ -26,12 +28,12 @@ ChinookDataRepo >> rawData [
 	^ rawData
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookDataRepo >> rawData: anObject [
 	rawData := anObject
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookDataRepo >> resetData [
 	| repository |
 	self rootDirectory ensureDeleteAll.
@@ -41,18 +43,18 @@ ChinookDataRepo >> resetData [
 	^ self rootDirectory
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookDataRepo >> rootDirectory [
 	rootDirectory ifNil: [rootDirectory := 'chinook-data' asFileReference].
 	^ rootDirectory
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookDataRepo >> rootDirectory: anObject [
 	rootDirectory := anObject
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookDataRepo >> sqliteFile [
 	^ (self rootDirectory / 'ChinookDatabase' / 'DataSources' / 'Chinook_sqlite.sqlite') pathString
 ]

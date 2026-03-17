@@ -1,29 +1,31 @@
 Class {
-	#name : #ChinookAccessObject,
-	#superclass : #Object,
+	#name : 'ChinookAccessObject',
+	#superclass : 'Object',
 	#instVars : [
 		'rawData'
 	],
-	#category : #'GtChinook-Access'
+	#category : 'GtChinook-Access',
+	#package : 'GtChinook',
+	#tag : 'Access'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookAccessObject >> rawData [
 	rawData ifNil: [rawData := ChinookDataRepo new rawData].
 	^ rawData
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookAccessObject >> rawData: anObject [
 	rawData := anObject
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookAccessObject >> retrieve [
 	self subclassResponsibility
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookAccessObject >> retrieveFor: aKey [
 	^ self rawData at: aKey 
 ]

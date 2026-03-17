@@ -1,23 +1,25 @@
 Class {
-	#name : #ChinookSqliteConfig,
-	#superclass : #ChinookConfig,
+	#name : 'ChinookSqliteConfig',
+	#superclass : 'ChinookConfig',
 	#instVars : [
 		'databaseConfig'
 	],
-	#category : #'GtChinook-Config'
+	#category : 'GtChinook-Config',
+	#package : 'GtChinook',
+	#tag : 'Config'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookSqliteConfig >> accessClassname [
 	^ 'ChinookSqliteAccessObject'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookSqliteConfig >> databaseConfig [
 	^ databaseConfig
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookSqliteConfig >> databaseConfig: anObject [
 	databaseConfig := anObject
 ]

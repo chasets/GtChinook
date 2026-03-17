@@ -1,15 +1,17 @@
 Class {
-	#name : #GtChinookHomeSection,
-	#superclass : #GtHomeMultiCardSection,
-	#category : #'GtChinook-Card'
+	#name : 'GtChinookHomeSection',
+	#superclass : 'GtHomeMultiCardSection',
+	#category : 'GtChinook-Card',
+	#package : 'GtChinook',
+	#tag : 'Card'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 GtChinookHomeSection >> defaultPriority [
-	^ 15
+	^ 35
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 GtChinookHomeSection >> gtUsedKnowledgeBaseCard [
 	<gtSectionCard>
 	<gtExample>
@@ -34,7 +36,7 @@ GtChinookHomeSection >> gtUsedKnowledgeBaseCard [
 				yourself
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 GtChinookHomeSection >> sectionTitle [
 	^ 'Chinook Data'
 ]

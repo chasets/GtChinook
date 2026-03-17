@@ -1,15 +1,17 @@
 Class {
-	#name : #ChinookSqliteAccessArtists,
-	#superclass : #ChinookSqliteAccessObject,
-	#category : #'GtChinook-Access'
+	#name : 'ChinookSqliteAccessArtists',
+	#superclass : 'ChinookSqliteAccessObject',
+	#category : 'GtChinook-Access',
+	#package : 'GtChinook',
+	#tag : 'Access'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookSqliteAccessArtists class >> groupClassname [
 	^ 'ChinookArtists'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookSqliteAccessArtists >> retrieve [
 	^ self query: 'select * from artist'
 ]

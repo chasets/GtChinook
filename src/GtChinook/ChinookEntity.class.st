@@ -1,15 +1,17 @@
 Class {
-	#name : #ChinookEntity,
-	#superclass : #ChinookObject,
-	#category : #'GtChinook-Core'
+	#name : 'ChinookEntity',
+	#superclass : 'ChinookObject',
+	#category : 'GtChinook-Core',
+	#package : 'GtChinook',
+	#tag : 'Core'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookEntity >> <= other [
 	^ self name <= other name
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookEntity >> gtDetailsFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -20,7 +22,7 @@ ChinookEntity >> gtDetailsFor: aView [
 		column: 'Value' text: #value.
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookEntity >> gtRawDataFor: aView [
 	<gtView>
 	^ aView columnedList 
@@ -33,12 +35,12 @@ ChinookEntity >> gtRawDataFor: aView [
 		column: 'Value' text: #value
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookEntity >> name [
 	^ self subclassResponsibility
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookEntity >> printOn: aStream [
 	aStream nextPutAll: self name.
 ]

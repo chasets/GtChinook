@@ -1,12 +1,14 @@
 Class {
-	#name : #ChinookGroup,
-	#superclass : #ChinookObject,
+	#name : 'ChinookGroup',
+	#superclass : 'ChinookObject',
 	#traits : 'TGtGroup',
 	#classTraits : 'TGtGroup classTrait',
-	#category : #'GtChinook-Core'
+	#category : 'GtChinook-Core',
+	#package : 'GtChinook',
+	#tag : 'Core'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookGroup >> gtItemsFor: aView [
 	<gtView>
 	^ aView list 
@@ -15,7 +17,7 @@ ChinookGroup >> gtItemsFor: aView [
 		items: [self items]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookGroup >> gtRawDataFor: aView [
 	<gtView>
 	^ aView list
@@ -23,12 +25,12 @@ ChinookGroup >> gtRawDataFor: aView [
 		items: [ self rawData ]
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 ChinookGroup >> isEmptyOrNil [
 	^ self isEmpty
 ]
 
-{ #category : #printing }
+{ #category : 'printing' }
 ChinookGroup >> printOn: aStream [
 	| itemCount |
 	itemCount := self rawData isEmptyOrNil 
@@ -40,7 +42,7 @@ ChinookGroup >> printOn: aStream [
 	aStream nextPut: $)
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookGroup >> sorted [
 	^ self asOrderedCollection sorted
 ]

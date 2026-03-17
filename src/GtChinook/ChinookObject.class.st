@@ -1,15 +1,17 @@
 Class {
-	#name : #ChinookObject,
-	#superclass : #Object,
+	#name : 'ChinookObject',
+	#superclass : 'Object',
 	#instVars : [
 		'rawData',
 		'config',
 		'accessObject'
 	],
-	#category : #'GtChinook-Core'
+	#category : 'GtChinook-Core',
+	#package : 'GtChinook',
+	#tag : 'Core'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookObject >> accessObject [
 	"find the subclass of the accessClassname that matches the group class (e.g., AwsEc2Instances) of the current class"
 
@@ -23,23 +25,23 @@ ChinookObject >> accessObject [
 	^ accessObject
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookObject >> accessObject: anObject [
 	accessObject := anObject
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookObject >> config [
 	config ifNil: [config := ChinookConfig new].
 	^ config
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookObject >> config: anObject [
 	config := anObject
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookObject >> gtAccessObjectFor: aView [
 	<gtView>
 	^ aView forward
@@ -49,19 +51,19 @@ ChinookObject >> gtAccessObjectFor: aView [
 		view: #gtRawFor:
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookObject >> populate [
 	| data |
 	data := self accessObject retrieve.
 	self rawData: data
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookObject >> rawData [
 	^ rawData ifNil: [ Dictionary new ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ChinookObject >> rawData: dictionary [
 	rawData := dictionary
 ]

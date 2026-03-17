@@ -1,13 +1,15 @@
 Class {
-	#name : #ChinookAlbum,
-	#superclass : #ChinookEntity,
+	#name : 'ChinookAlbum',
+	#superclass : 'ChinookEntity',
 	#instVars : [
 		'albumCover'
 	],
-	#category : #'GtChinook-Core'
+	#category : 'GtChinook-Core',
+	#package : 'GtChinook',
+	#tag : 'Core'
 }
 
-{ #category : #util }
+{ #category : 'util' }
 ChinookAlbum >> albumCover [
 	| releaseId imageUrl image |
 	albumCover ifNil: [
@@ -19,7 +21,7 @@ ChinookAlbum >> albumCover [
 	
 ]
 
-{ #category : #util }
+{ #category : 'util' }
 ChinookAlbum >> albumCoverImageUrlFor: aReleaseId [ 
 | coverUrl coverResult imageUrl |
 	coverUrl := 'http://coverartarchive.org/release' asZnUrl addPathSegment: aReleaseId.
@@ -28,7 +30,7 @@ ChinookAlbum >> albumCoverImageUrlFor: aReleaseId [
 	 ^ imageUrl
 ]
 
-{ #category : #util }
+{ #category : 'util' }
 ChinookAlbum >> albumReleaseId [
 	 | queryParams searchUrl searchResult releaseId |
 	queryParams := {'query' -> self name . 'fmt' -> 'json' . 'limit' -> '1'} asDictionary.
@@ -38,7 +40,7 @@ ChinookAlbum >> albumReleaseId [
 	^ releaseId
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookAlbum >> artist [
 	"super inefficient way to do this; just an example for navigation"
 	| allArtists |
@@ -46,17 +48,17 @@ ChinookAlbum >> artist [
 	^ allArtists detect: [:i | i artistId = self artistId]
 ]
 
-{ #category : #info }
+{ #category : 'info' }
 ChinookAlbum >> artistId [
 	^ self rawData at: 'ArtistId'
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookAlbum >> artistName [
 	^ self artist name
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookAlbum >> gtArtistFor: aView [
 	<gtView>
 	^ aView forward
@@ -66,7 +68,7 @@ ChinookAlbum >> gtArtistFor: aView [
 		view: #gtItemsFor:
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookAlbum >> gtViewDetailsFor: aView [
 	<gtView>
 	^ aView explicit 
@@ -114,12 +116,12 @@ ChinookAlbum >> gtViewDetailsFor: aView [
 			container ].
 ]
 
-{ #category : #info }
+{ #category : 'info' }
 ChinookAlbum >> name [
 	^ self rawData at: 'Title'
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 ChinookAlbum >> placeholderImage [
 | borderedForm |
 	borderedForm := Form extent: 100@100.
